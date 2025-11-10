@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw A Human</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<body>
 
-    <style>
-        .titles {
-            background-color:#3b3a95; margin: 1.5%; border: 1% solid; border-radius: 15px; padding: 1%;
-        }
-        .titles h1{
-            color: white;
-        }
-        .info-box {
-            background-color: #535c91; margin: 1.5%; border: 1% solid; border-radius: 15px; padding: 1%;
-        }
-        .info-box p{
-            color: white;
-        }
-    </style>
-    </head>
-<body style="background-color: #070f2b;">
-    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Draw A Human</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExample02">
-                <ul class="navbar-nav me-auto" style="align-self: center; padding-left: 85%;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact Us</a>
-                    </li>
-                </ul>
+  <!-- Horizontal Navbar -->
+  <ul class="NavBarH">
+    <li class="logo">DrawAHuman</li>
+    <li class="logo">DrawAHuman</li>
+    <li><a href="#Contact" class="NHButton">About Us</a></li>
+    <li><a href="#About" class="NHButton">Contact Us</a></li>
+  </ul>
+
+  <!-- Vertical Navbar -->
+  <ul class="NavBarV">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#a">I</a></li>
+    <li><a href="#a">II</a></li>
+    <li><a href="#a">III</a></li>
+    <li><a href="#a">IV</a></li>
+  </ul>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h2>Home</h2>
+        <div class="textbox" >
+            <div class="square"></div>
+            <p>This website teaches you how to draw parts of the body. It provides step-by-step guides on drawing the head, hands, forearm, torso, and more. With my background in drawing, I offer reliable guides for anyone learning how to draw the human body.</p>
+        </div>
+
+
+        
+    <h2>Lessons</h2>
+    <div class="LessonPlan">
+      <div class="LessonBox">
+            <div class="LessonTitle">
+                <p>I.Fundamental</p>
             </div>
-        </div>
-    </nav>
-    <div style="margin-left: 7.5%; margin-right: 5%; margin-top: 2.5%;">
-        <div class="titles">
-            <h1>Home</h1>
-        </div>
-        <div class="info-box" style="display: flex;">
-            <p style="margin-left: 20%; word-wrap: normal; font-size: 20px;">gtersfdagtersfda gtersfdagt ersfdagtersfdagte rsfdagtersfdagtersfd agtersfdagtersfdagtersfd agtersfdagtersfdagter sfdagtersfdagtersfdagte rsfdagtersfdagtersfdagte rsfdagtersfdagtersfda gtersfdagtersfdagtersfdag tersfdagtersfdagtersfdagt ersfdagtersfd agtersfdagt ersfdagters fda</p>
-        </div>
-        <div class="titles">
-            <h1>Lessons</h1>
-        </div>
-        <div class="info-box" style="display: flex;">
-            <p style="margin-left: 20%; word-wrap: normal; font-size: 20px;">gtersfdagtersfda gtersfdagt ersfdagtersfdagte rsfdagtersfdagtersfd agtersfdagtersfdagtersfd agtersfdagtersfdagter sfdagtersfdagtersfdagte rsfdagtersfdagtersfdagte rsfdagtersfdagtersfda gtersfdagtersfdagtersfdag tersfdagtersfdagtersfdagt ersfdagtersfd agtersfdagt ersfdagters fda</p>
-        </div>
-        <div class="titles">
-            <h1>Contact Us</h1>
-        </div>
+            <div class="LessonDesc">
+                <p>Shows the fundamentals that must be learned first before anything else.</p>
+            </div>
+          </div>
+      <div class="LessonBox">
+            <div class="LessonTitle">
+                <p>II. Head and Face</p>
+            </div>
+            <div class="LessonDesc">
+                <p>Shows step-by-step guides on how to draw the head then how to draw the face.</p>
+            </div>
+          </div>    
+      <div class="LessonBox">
+            <div class="LessonTitle">
+                <p>III. Torso and Limbs</p>
+            </div>
+            <div class="LessonDesc">
+                <p>Teaches how to draw the torso and limbs by using basic fundamental shapes.</p>
+            </div>
+          </div>
+      <div class="LessonBox">
+            <div class="LessonTitle">
+                <p>IV.Full-body and Gesture</p>
+            </div>
+            <div class="LessonDesc">
+                <p>To wrap things up, this is where they learn to apply the previous guides. Here is where I will also
+make a guide on doing gesture drawings for full body.</p>
+            </div>
+          </div>
     </div>
+
+
+    <h2>Contact Us</h2>
+  </div>
+
 </body>
 </html>
