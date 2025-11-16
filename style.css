@@ -155,17 +155,6 @@ a:visited {
   word-break: break-word;
 }
 
-.square {
-  width: 30%;
-  flex-grow: inherit;
-  border: solid;
-  border-width: 5px;    
-  border-color: #2c3252;
-  background-color: #8e8ec2;
-  border-radius: 20px;
-  margin-right: 20px;
-}
-
 .LessonPlan{
   display: flex;
   align-items: center;
