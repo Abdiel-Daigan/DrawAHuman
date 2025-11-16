@@ -6,6 +6,12 @@ body {
   background-color: #070f2b;
 }
 
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 .NavBarH {
   border: solid;
   border-width: 5px;    
@@ -28,6 +34,7 @@ body {
 }
 
 .logo{
+  align-self: center;
   color: white;
   padding:10px;
   float: left;
@@ -42,6 +49,40 @@ body {
 
 .NavBarH li a:hover {
   background-color: #111111;
+}
+
+.Lessons_Top {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 12px;
+}
+
+.Lesson_Icon {
+  border: 3px solid #2c3252;
+  background-color: #535c91;
+  width: 40px;       /* small button width */
+  height: 40px;      /* square button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Lesson_Move {
+  border: 3px solid #2c3252;
+  background-color: #535c91;
+  color: white;
+  width: clamp(40px,15vw,80px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .NavBarV {
@@ -97,7 +138,6 @@ body {
 }
 
 .textbox {
-  display: flex;
   border: solid;
   border-width: 5px;    
   border-color: #2c3252;
@@ -109,7 +149,7 @@ body {
 }
 .textbox p {
   color: white;
-  width: 75%;
+  width: 100%;
   font-size: clamp(10px,2.5vw,18x);
   margin: 0;
   word-break: break-word;
@@ -128,9 +168,9 @@ body {
 
 .LessonPlan{
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
 }
 
 .LessonBox{
@@ -138,11 +178,28 @@ body {
   border-width: 5px;    
   border-color: #2c3252;
   display: flex;
+  align-content: center;
   background-color: #535c91;
   padding: 10px;
   max-width: 600px;
   border-radius: 15px;
+  margin: 15px;
 }
+
+.LessonBox_small{
+  border: solid;
+  border-width: 5px;    
+  border-color: #2c3252;
+  display: flex;
+  align-content: center;
+  background-color: #535c91;
+  padding: 10px;
+  width: clamp(130px,85vw,500px);
+  border-radius: 15px;
+  margin: 12px;
+  color: white;
+}
+
 .LessonBox:hover{
   border-color: #c5c8db;
   cursor: pointer;
@@ -170,7 +227,7 @@ body {
 }.LessonTitle p{
     text-align: center;
     margin: 10px;
-    font-size: 20px;
+    font-size: clamp(12px,2.0vw,15px);
     color: #1b1a55;
 }
 
@@ -189,8 +246,8 @@ body {
 
 .LessonDesc p{
     color: white;
-    margin: 10px;
-    font-size: 15px;
+    margin: 1.5vw;
+    font-size: clamp(12px,2.0vw,15px);
 }
 
 
@@ -308,6 +365,15 @@ img {vertical-align: middle;}
   .dot,.dot2{
     display: none;
   }
+  .LessonBox{
+    display: none;
+  }
+}
+
+@media (min-width: 560px){
+  .LessonBox_small{
+    display: none;
+  }
 }
 
 @media (max-width: 345px) {
@@ -315,6 +381,12 @@ img {vertical-align: middle;}
     font-size: 13px;
   }
   .dot,.dot2{
+    display: none;
+  }
+}
+
+@media (min-width: 561.5px){
+  .Lessons_Top{
     display: none;
   }
 }
