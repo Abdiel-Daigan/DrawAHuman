@@ -370,8 +370,11 @@ img {vertical-align: middle;}
   }
 }
 
-@media (min-width: 560px){
+@media (min-width: 562px){
   .LessonBox_small{
+    display: none;
+  }
+  .LessonBox_small h3{
     display: none;
   }
 }
