@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw A Human</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <!-- Horizontal Navbar -->
+  <ul class="NavBarH">
+    <li class="logo">☰</li>
+    <li class="logo">DrawAHuman</li>
+    <li><a href="index.html" class="NHButtonHome">Home</a></li>
+    <li><a href="index.html" class="NHButton">About Us</a></li>
+    <li><a href="index.html" class="NHButton">Contact Us</a></li>
+  </ul>
+
+  <!-- Vertical Navbar -->
+  <ul class="NavBarV">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Lesson1.html">I</a></li>
+    <li><a href="Lesson2.html">II</a></li>
+    <li><a href="Lesson3.html">III</a></li>
+    <li><a href="Lesson4.html">IV</a></li>
+  </ul>
+
+  <!-- Main Content -->
+    <div class="content">
+        <div class="Lessons_Top">
+            <a href="Lesson2.html"><div class="Lesson_Move">Prev</div></a>
+            <a href="Lesson1.html"><div class="Lesson_Icon">I</div></a>
+            <a href="Lesson2.html"><div class="Lesson_Icon">II</div></a>
+            <div class="Lesson_Icon">III</div>
+            <a href="Lesson4.html"><div class="Lesson_Icon">IV</div></a>
+            <a href="Lesson4.html"><div class="Lesson_Move">Next</div></a>
+        </div>
+        <h2>Lesson 3: Torso and Limbs</h2>
+        <div class="textbox" >
+            <p>[text explaining the fundamental shapes that is needed to be learned before continuing]</p>
+        </div>
+        <h2>A. Drawing The Torso</h2>
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="L1F1I1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="L1F1I2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="L1F1I3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="L1F1I4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="L1F1I5.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+
+        <div class="textbox" >
+            <p>[text explaining the fundamental shapes that is needed to be learned before continuing]</p>
+        </div>
+        <h2>B. Drawing The Limbs</h2>
+
+        <div class="slideshow-container">
+
+        <div class="mySlides2 fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="L1F2I1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2 fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="L1F2I2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2 fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="L1F2I3.png" style="width:100%">
+        </div>
+
+        <a class="prev2" onclick="plusSlides2(-1)">❮</a>
+        <a class="next2" onclick="plusSlides2(1)">❯</a>
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+        <span class="dot2" onclick="currentSlide2(1)"></span> 
+        <span class="dot2" onclick="currentSlide2(2)"></span> 
+        <span class="dot2" onclick="currentSlide2(3)"></span>
+        </div>
+
+        <div class="textbox" >
+            <p>[text explaining the fundamental shapes that is needed to be learned before continuing]</p>
+        </div>
+        <div class="Lessons_Top">
+            <a href="Lesson2.html"><div class="Lesson_Move">Prev</div></a>
+            <a href="Lesson1.html"><div class="Lesson_Icon">I</div></a>
+            <a href="Lesson2.html"><div class="Lesson_Icon">II</div></a>
+            <div class="Lesson_Icon">III</div>
+            <a href="Lesson4.html"><div class="Lesson_Icon">IV</div></a>
+            <a href="Lesson4.html"><div class="Lesson_Move">Next</div></a>
+        </div>
+
+        <div class="footer">
+      <p>DrawAHuman.com 2025</p>
+    </div>
+
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = n-1}    
+        if (n < 1) {slideIndex = 1}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+
+        
+
+
+
+
+
+
+
+
+
+        let slideIndex2 = 1;
+        showSlides2(slideIndex2);
+
+        function plusSlides2(a) {
+        showSlides2(slideIndex2 += a);
+        }
+
+        function currentSlide2(a) {
+        showSlides2(slideIndex2 = a);
+        }
+
+        function showSlides2(a) {
+        let g;
+        let slides2 = document.getElementsByClassName("mySlides2");
+        let dots2 = document.getElementsByClassName("dot2");
+        if (a > slides2.length) {slideIndex2 = a-1}    
+        if (a < 1) {slideIndex2 = 1}
+        for (g = 0; g < slides2.length; g++) {
+            slides2[g].style.display = "none";  
+        }
+        for (g = 0; g < dots2.length; g++) {
+            dots2[g].className = dots2[g].className.replace(" active", "");
+        }
+        slides2[slideIndex2-1].style.display = "block";  
+        dots2[slideIndex2-1].className += " active";
+        }
+        </script>
+
+    </div>
+</body>
+</html>
