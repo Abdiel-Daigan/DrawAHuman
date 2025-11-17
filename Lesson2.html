@@ -15,8 +15,6 @@
     <li class="logo">𖨆</li>
     <li class="logo">DrawAHuman</li>
     <li><a href="index.html" class="NHButtonHome">Home</a></li>
-    <li><a href="index.html" class="NHButton">About Us</a></li>
-    <li><a href="index.html" class="NHButton">Contact Us</a></li>
   </ul>
 
   <!-- Vertical Navbar -->
@@ -47,27 +45,27 @@
 
         <div class="mySlides fade">
         <div class="numbertext">1 / 5</div>
-        <img src="L2F1I1.png" alt=" " style="width:100%">
+        <img src="L2F1I1.png" alt="L2F1I1" style="width:100%">
         </div>
 
         <div class="mySlides fade">
         <div class="numbertext">2 / 5</div>
-        <img src="L2F1I2.png" alt=" " style="width:100%">
+        <img src="L2F1I2.png" alt="L2F1I2" style="width:100%">
         </div>
 
         <div class="mySlides fade">
         <div class="numbertext">3 / 5</div>
-        <img src="L2F1I3.png" alt=" " style="width:100%">
+        <img src="L2F1I3.png" alt="L2F1I3" style="width:100%">
         </div>
 
         <div class="mySlides fade">
         <div class="numbertext">4 / 5</div>
-        <img src="L2F1I4.png" alt=" " style="width:100%">
+        <img src="L2F1I4.png" alt="L2F1I4" style="width:100%">
         </div>
 
         <div class="mySlides fade">
         <div class="numbertext">5 / 5</div>
-        <img src="L2F1I5.png" alt=" " style="width:100%">
+        <img src="L2F1I5.png" alt="L2F1I5" style="width:100%">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -94,17 +92,17 @@
 
         <div class="mySlides2 fade">
         <div class="numbertext">1 / 3</div>
-        <img src="L2F2I1.png" alt=" " style="width:100%">
+        <img src="L2F2I1.png" alt="L2F2I1" style="width:100%">
         </div>
 
         <div class="mySlides2 fade">
         <div class="numbertext">2 / 3</div>
-        <img src="L2F2I1.png" alt=" " style="width:100%">
+        <img src="L2F2I1.png" alt="L2F2I1" style="width:100%">
         </div>
 
         <div class="mySlides2 fade">
         <div class="numbertext">3 / 3</div>
-        <img src="L2F2I1.png" alt=" " style="width:100%">
+        <img src="L2F2I1.png" alt="L2F2I1" style="width:100%">
         </div>
 
         <a class="prev2" onclick="plusSlides2(-1)">❮</a>
@@ -135,74 +133,7 @@
         <div class="footer">
       <p>DrawAHuman.com 2025</p>
     </div>
-
-        <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = n-1}    
-        if (n < 1) {slideIndex = 1}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        }
-
-        
-
-
-
-
-
-
-
-
-
-        let slideIndex2 = 1;
-        showSlides2(slideIndex2);
-
-        function plusSlides2(a) {
-        showSlides2(slideIndex2 += a);
-        }
-
-        function currentSlide2(a) {
-        showSlides2(slideIndex2 = a);
-        }
-
-        function showSlides2(a) {
-        let g;
-        let slides2 = document.getElementsByClassName("mySlides2");
-        let dots2 = document.getElementsByClassName("dot2");
-        if (a > slides2.length) {slideIndex2 = a-1}    
-        if (a < 1) {slideIndex2 = 1}
-        for (g = 0; g < slides2.length; g++) {
-            slides2[g].style.display = "none";  
-        }
-        for (g = 0; g < dots2.length; g++) {
-            dots2[g].className = dots2[g].className.replace(" active", "");
-        }
-        slides2[slideIndex2-1].style.display = "block";  
-        dots2[slideIndex2-1].className += " active";
-        }
-        </script>
-
     </div>
+<script src="scripts.js"></script>
 </body>
 </html>
-
